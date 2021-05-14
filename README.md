@@ -31,3 +31,6 @@
 #### Reference
 * https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/move-hive-tables
 * https://www.youtube.com/watch?v=tYr2AVdCOzM
+* https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-use-hive-beeline
+* https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters
+* https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-overview#cluster-types-in-hdinsight
