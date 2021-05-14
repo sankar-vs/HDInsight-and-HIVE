@@ -23,7 +23,7 @@
     * Start working on HQL commands by creating an HQL file
     * To get the outputs from the entered HQL file
         * beeline -u 'jdbc:hive2://localhost:10001/;transportMode=http' -f <filename.hql>
-	* You can also query your results to you Azure Storage account by 
+	* You can also query your results to you Azure Storage account by: 
             * insert overwrite directory wasb:///<directory within the default container> <select clause from ...>
         * You can also save the Output of the hql file directly to a text file by
             * beeline -u 'jdbc:hive2://localhost:10001/;transportMode=http' -f <filename.hql> >> <outputfile.txt>
