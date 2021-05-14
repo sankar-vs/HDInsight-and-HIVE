@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS day_wise;
 
 CREATE EXTERNAL TABLE day_wise(
-        DateDayWise TIMESTAMP,
+        DateDayWise DATE,
         ConfirmedCases INT,
         ConfirmedDeaths INT,
         RecoverdCases INT
@@ -10,10 +10,10 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION 'wasbs:///hadoopcluster@mydemostorage1234.blob.core.windows.net/processed_input/day_wise.csv';
+LOCATION 'wasbs:///hadoopcluster@mydemostorage1234.blob.core.windows.net/processed/day_wise.csv';
 
 --Load data Into HIVE table
-LOAD DATA INPATH "wasbs:///hadoopcluster@mydemostorage1234.blob.core.windows.net/processed_input/day_wise.csv" INTO TABLE day_wise;
+LOAD DATA INPATH "wasbs:///hadoopcluster@mydemostorage1234.blob.core.windows.net/processed/day_wise.csv" INTO TABLE day_wise;
 
 --Total Recored from the Table
 SELECT *
